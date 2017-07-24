@@ -18,7 +18,12 @@ Docker build of [Dat](https://github.com/datproject/dat) - the distributed data 
     git clone https://github.com/weiji14/dat.git
     cd dat
     docker build -f Dockerfile -t dat .
+    
+    # On Linux
     docker run --rm -it -v $PWD:/home/dat -u `id -u`:`id -g` dat
+    
+    :: On Windows
+    docker run --rm -it -v %cd%:/home/dat dat
 
 ## Troubleshooting
 
